@@ -6,7 +6,7 @@
   "scripts": {
     "watch": "tsc -w",
     "dev": "tsx watch src/app.ts",
-    "start-railway": "tsc && node build/index.js",
+    "start-railway": "tsc && node dist/app.js",
     "start": "node dist/app.js"
   },
   "keywords": [],
