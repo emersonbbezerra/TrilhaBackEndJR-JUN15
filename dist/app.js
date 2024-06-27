@@ -8,7 +8,6 @@ const usersRoutes_1 = require("./routes/usersRoutes");
 const tasksRoutes_1 = require("./routes/tasksRoutes");
 const errorHandler_1 = require("./middlewares/errorHandler");
 class App {
-    app;
     constructor() {
         this.app = (0, express_1.default)();
         this.initMiddlewares();

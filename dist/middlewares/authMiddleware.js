@@ -7,7 +7,8 @@ exports.AuthMiddleware = void 0;
 const jsonwebtoken_1 = __importDefault(require("jsonwebtoken"));
 class AuthMiddleware {
     auth(request, response, next) {
-        const token = request.headers.authorization?.replace("Bearer ", "");
+        var _a;
+        const token = (_a = request.headers.authorization) === null || _a === void 0 ? void 0 : _a.replace("Bearer ", "");
         if (!token) {
             return response
                 .status(401)

@@ -2,7 +2,6 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.NotFoundError = exports.UnauthorizedError = exports.BadRequestError = void 0;
 class BadRequestError extends Error {
-    statusCode;
     constructor(message) {
         super(message);
         this.statusCode = 400;
@@ -10,7 +9,6 @@ class BadRequestError extends Error {
 }
 exports.BadRequestError = BadRequestError;
 class UnauthorizedError extends Error {
-    statusCode;
     constructor(message) {
         super(message);
         this.statusCode = 401;
@@ -18,7 +16,6 @@ class UnauthorizedError extends Error {
 }
 exports.UnauthorizedError = UnauthorizedError;
 class NotFoundError extends Error {
-    statusCode;
     constructor(message) {
         super(message);
         this.statusCode = 404;
