@@ -4,7 +4,10 @@
   "description": "",
   "main": "dist/app.js",
   "scripts": {
-    "dev": "tsx watch src/app.ts"
+    "watch": "tsc -w",
+    "dev": "tsx watch src/app.ts",
+    "build": "tsc",
+    "start": "node dist/app.js"
   },
   "keywords": [],
   "author": "",
