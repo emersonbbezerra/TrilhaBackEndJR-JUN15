@@ -84,13 +84,11 @@ class TasksServices {
       throw new NotFoundError("No tasks found for this user");
     }
 
-    const tasksList = tasks.map((task) => ({
-      id: task.id,
+    const tasksList = tasks.map((task: Partial<Task>) => ({
       title: task.title,
       description: task.description,
       completed: task.completed,
       userId: task.userId,
-      userName: task.user.name,
     }));
 
     return tasksList;
